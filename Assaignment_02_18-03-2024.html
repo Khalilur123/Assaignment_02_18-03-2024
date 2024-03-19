@@ -21,22 +21,20 @@
   padding: 20px;
 }
 
-    }
 .option {
  display: flex;
 justify-content: center;
   align-items: center;
     }
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .item {
-  text-align: center;
+  text-align: justify;
+
 }
 
 .image {
@@ -49,9 +47,7 @@ justify-content: center;
   margin-top: 10px;
 }
 
-button {
-  padding: 5px 10px;
-  background-color: blue;
+.button {
   color: white;
   border: none;
   cursor: pointer;
@@ -59,6 +55,44 @@ button {
 
 .text {
   margin-top: 10px;
+}
+.footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Example styles for social media icons */
+.fb-icon:before {
+  content: "\f09a"; /* Facebook icon unicode */
+  font-family: "Font Awesome 5 Brands";
+}
+
+.twitter-icon:before {
+  content: "\f099"; /* Twitter icon unicode */
+  font-family: "Font Awesome 5 Brands";
+}
+
+.linkedin-icon:before {
+  content: "\f08c"; /* LinkedIn icon unicode */
+  font-family: "Font Awesome 5 Brands";
+}
+
+.whatsapp-icon:before {
+  content: "\f232"; /* WhatsApp icon unicode */
+  font-family: "Font Awesome 5 Brands";
 }
   </style>
 </head>
@@ -89,6 +123,7 @@ button {
         color: black;
       border-radius: 10px;
       padding: 10px;
+      margin-right: 20px;
       ">Upcoming Match</button>
       </div>
       <div>
@@ -96,6 +131,7 @@ button {
         color:black;
       border-radius: 10px;
       padding: 10px;
+      margin-right: 20px;
       ">All Group</button>
       </div>
       <div>
@@ -103,6 +139,7 @@ button {
         color: black;
       border-radius: 10px;
       padding: 10px;
+      
       ">Blog</button>
       </div>
     </nav>
@@ -112,92 +149,137 @@ button {
     <nav>
       <div class="container">
   <div class="item">
-    <div class="image"></div>
+    <div class="image">
+      <img src="https://static01.nyt.com/images/2022/12/18/multimedia/18world-cup-france-argentina-wrapup-photos-1-2-0254/18world-cup-france-argentina-wrapup-photos-1-2-0254-jumbo.jpg?quality=75&auto=webp" width="100%" height="100%">
+    </div>
     <div class="button">
-      <button>Button 1</button>
+      <button>View More</button>
     </div>
     <div class="text">
-      <p>Paragraph 1</p>
+      <p>Fireworks went off at Lusail Stadium after Argentina was presented the World Cup trophy after its win.</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://static01.nyt.com/images/2022/12/18/multimedia/18world-cup-france-argentina-wrapup-photos-1-9ce6/18world-cup-france-argentina-wrapup-photos-1-9ce6-jumbo.jpg?quality=75&auto=webp" width="100%" height="100%">
+    </div>
+    <div class="button">
+      <button>View More</button>
+    </div>
+    <div class="text">
+      <p>Despite scoring a hat trick in the final game, Kylian Mbappé of France finished the tournament dejected on his team’s bench.Credit...</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://static01.nyt.com/images/2022/12/18/multimedia/18world-cup-france-argentina-mbappe-photos-morocco-1-9c04/18world-cup-france-argentina-mbappe-photos-morocco-1-9c04-jumbo.jpg?quality=75&auto=webp" width="100%" height="100%">
+    </div>
+    <div class="button">
+      <button>View More</button>
+    </div>
+    <div class="text">
+      <p>Morocco became the first African team to reach the semifinals of the World Cup in the tournament’s history.</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://c7.alamy.com/comp/2KBTP0G/ca-osasuna-players-trying-to-stop-leo-messi-free-kick-during-la-liga-match-between-fc-barcelona-and-ca-osasuna-behind-closed-doors-due-to-coronavirus-at-camp-nou-stadium-on-july-16-2020-in-barcelona-spain-photo-by-xavier-bonillanurphoto-2KBTP0G.jpg" width="100%" height="100%">
+    </div>
+    <div class="button">
+      <button>View More</button>
+    </div>
+    <div class="text">
+      <p>Lionel Messi was hoisted on his teammates’ shoulders after Argentina’s victory.</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://c8.alamy.com/comp/R5PJR0/barcelona-spain-2nd-dec-2018-la-liga-football-barcelona-versus-villareal-lionel-messi-of-fc-barcelona-lines-up-a-direct-free-kick-credit-action-plus-sportsalamy-live-news-R5PJR0.jpg" width="100%" height="100%">
+    </div>
+    <div class="button">
+      <button>View More</button>
+    </div>
+    <div class="text">
+      <p>Messi free kick- Barcelona, Spain, Leo Messi of FC Barcelona during free kick against Valencia</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt2d086e5ed5113b22/60ddc537993b0438464a5a17/7867a09b1b3dc642785fca9b9cf09291cd612b75.jpg?auto=webp&format=pjpg&width=3840&quality=60" width="100%" height="100%">
+    </div>
+    <div class="button">
+      <button>View More</button>
+    </div>
+    <div class="text">
+      <p>After the Real Madrid star competed in a fourth World Cup, Goal takes a look back at his previous involvement</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://i.pinimg.com/564x/d3/41/d1/d341d1961f7d804d702cdab5b718980f.jpg" width="100%" height="100%">
+    </div>
+    <div class="button">
+      <button>View More</button>
+    </div>
+    <div class="text">
+      <p>Kaká started in his first FIFA World Cup finals in 2006 and scored his first and only goal of the tournament with a 25-yard strike in Brazil's 1–0 victory over ...</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://media.gettyimages.com/id/452116870/photo/rio-de-janeiro-brazil-mesut-oezil-of-germany-holds-up-the-world-cup-trophy-in-the-germany.jpg?s=612x612&w=gi&k=20&c=ePFhA45hsi74BSupZA6F_RwtmKRVFHodA7S-yZKq4Hs=" width="100%" height="100%">
+    </div>
+    <div class="button">
+      <button>View More</button>
+    </div>
+    <div class="text">
+      <p>Özil helped Germany win the 2014 FIFA World Cup, but retired from international competition in 2018, alleging discrimination and disrespect by the German ...</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://img.bleacherreport.net/img/images/photos/002/381/249/Screenshot2013-07-01at12.00.25PM_crop_north.jpg?1372694477&w=3072&h=2048" width="100%" height="100%">
+    </div>
+    <div class="button">
+      <button>View More</button>
+    </div>
+    <div class="text">
+      <p>He won the 2013 FIFA Confederations Cup, winning the Golden Ball. In the 2014 FIFA World Cup, he was named in the Dream Team. He captained Brazil to their first ...</p>
     </div>
   </div>
   
-  <div class="item">
-    <div class="image"></div>
-    <div class="button">
-      <button>Button 2</button>
-    </div>
-    <div class="text">
-      <p>Paragraph 2</p>
-    </div>
-  </div>
-  <div class="item">
-    <div class="image"></div>
-    <div class="button">
-      <button>Button 2</button>
-    </div>
-    <div class="text">
-      <p>Paragraph 2</p>
-    </div>
-  </div>
-  <div class="item">
-    <div class="image"></div>
-    <div class="button">
-      <button>Button 2</button>
-    </div>
-    <div class="text">
-      <p>Paragraph 2</p>
-    </div>
-  </div>
-  <div class="item">
-    <div class="image"></div>
-    <div class="button">
-      <button>Button 2</button>
-    </div>
-    <div class="text">
-      <p>Paragraph 2</p>
-    </div>
-  </div>
-  <div class="item">
-    <div class="image"></div>
-    <div class="button">
-      <button>Button 2</button>
-    </div>
-    <div class="text">
-      <p>Paragraph 2</p>
-    </div>
-  </div>
-  <div class="item">
-    <div class="image"></div>
-    <div class="button">
-      <button>Button 2</button>
-    </div>
-    <div class="text">
-      <p>Paragraph 2</p>
-    </div>
-  </div>
-  <div class="item">
-    <div class="image"></div>
-    <div class="button">
-      <button>Button 2</button>
-    </div>
-    <div class="text">
-      <p>Paragraph 2</p>
-    </div>
-  </div>
-  <div class="item">
-    <div class="image"></div>
-    <div class="button">
-      <button>Button 2</button>
-    </div>
-    <div class="text">
-      <p>Paragraph 2</p>
-    </div>
-  </div>
 
   
 </div>
     </nav>
+    <nav class="option">
+            <div>
+        <button style="color: black;
+        border: none;
+        font-size: xx-large;
+        font-weight: bolder;
+            padding: 10px;
+            ">Goal</button>
+      </div>
+    </nav>
   </main>
-  
+  <FOOter>
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#">Contact</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">About Us</a>
+        <a href="#">Policy</a>
+        <a href="#">Settings</a>
+      </div>
+      <div class="social-icons">
+        <a href="" class="fb-icon">Facebook</a>
+        <a href="#" class="twitter-icon">Twitter</a>
+        <a href="#" class="linkedin-icon">LinkedIn</a>
+        <a href="#" class="whatsapp-icon">WhatsApp</a>
+      </div>
+    </footer>
+  </FOOter>
 </body>
 </html>
